@@ -17,12 +17,22 @@
                 <li>Créer une seconde variable et l’initier à la valeur variable2</li>
                 <li>Modifier la valeur de la variable dont la valeur par défaut est variable2</li>
                 <li>Créer un champ text dans lequel sont affichées les variables variableToDisplay et celle dont la valeur par défaut est variable2</li>
+                <li id="res"></li>
             </ul>
-        </div>   
+        </div>  
         <script src="../js/classie.js"></script>
         <script src="../js/gnmenu.js"></script>
         <script>
             new gnMenu(document.getElementById('gn-menu'));
+        </script>
+        <script>
+            var variableToDisplay;
+            var var2;
+            variableToDisplay = 1;
+            var var2 = "variable2";
+            var2 = 4;
+            var span = document.getElementById('res');
+            span.innerHTML = "La première variable vaut " + variableToDisplay + ", la seconde vaut " + var2 + ".";
         </script>
     </body>
 </html>

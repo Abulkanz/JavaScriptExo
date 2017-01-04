@@ -6,10 +6,16 @@ body {
   overflow-y: visible;
 }
 
-h1{
+ul h1{
     margin-top: auto;
     margin-bottom: auto;
+    color: #e7d17b;
 }
+
+ul{
+    color: #e7d17b;
+}
+
 .folds {
   margin-bottom: 48px;
 }
@@ -20,6 +26,7 @@ h1{
   height: 180px;
   background: #fff;
 }
+
 .child {
   position: absolute;
   top: 0;
