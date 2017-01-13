@@ -19,10 +19,18 @@
         </div>
         <script>
             "use strict";
+            //Déclaration & initialisation d'une variable globale
+            var maVariableGlobale = "varGlobale";
             function runCode() {
-                debugger;
-                alert("Hello World");
+                //Ecrivez vos premières lignes de javascript ici.
+                //Le fameux Hello World !
+                alert("Hello World !"); 
+                alert("On affiche maVariableGlobale " + maVariableGlobale);
+                //Déclaration & initialisation d'une variable locale
+                var maVariableLocale = "varLocale";
+                alert("On affiche dans la fonction maVariableLocale " + maVariableLocale);
             }
+            alert("On essaie d'afficher maVariableLocale " + maVariableLocale);
         </script>
         <script src="../js/classie.js"></script>
         <script src="../js/gnmenu.js"></script>

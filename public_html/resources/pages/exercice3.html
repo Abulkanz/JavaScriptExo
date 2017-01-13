@@ -13,26 +13,29 @@
         <div id="exercice3">
             <ul>
                 <li>Créer une variable appelée variableToDisplay</li>
-                <li>L’initialiser avec un objet de type number</li>
-                <li>Créer une seconde variable et l’initier à la valeur variable2</li>
+                <li>L’initialiser avec une variable de type number</li>
+                <li>Créer une seconde variable et l’initialiser à la valeur variable2</li>
                 <li>Modifier la valeur de la variable dont la valeur par défaut est variable2</li>
-                <li>Créer un champ text dans lequel sont affichées les variables variableToDisplay et celle dont la valeur par défaut est variable2</li>
-                <li id="res"></li>
+                <li>Créer un champ (div, span...) dans lequel sont affichées les variables variableToDisplay et celle dont la valeur par défaut est variable2</li>
             </ul>
-        </div>  
+        variableToDisplay = <span id="var1"></span> & maSecondeVariable = <span id="var2"></span><br/>
+        Mes variables sont <span id="variables"></span>
+        </div>
+        <script>
+            "use strict";
+
+            var variableToDisplay = 20;
+            var maSecondeVariable = "variable2";
+            maSecondeVariable = "ma nouvelle valeur pour la variable 2";
+
+            document.getElementById("var1").innerHTML = variableToDisplay;
+            document.getElementById("var2").innerHTML = maSecondeVariable;
+            document.getElementById("variables").innerHTML = variableToDisplay + " " + maSecondeVariable;
+        </script>
         <script src="../js/classie.js"></script>
         <script src="../js/gnmenu.js"></script>
         <script>
             new gnMenu(document.getElementById('gn-menu'));
-        </script>
-        <script>
-            var variableToDisplay;
-            var var2;
-            variableToDisplay = 1;
-            var var2 = "variable2";
-            var2 = 4;
-
-            document.getElementById('res').innerHTML = "La première variable vaut " + variableToDisplay + ", la seconde vaut " + var2 + ".";
         </script>
     </body>
 </html>
