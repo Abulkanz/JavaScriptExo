@@ -1,32 +1,26 @@
 body {
-  color : white;
+  color : white !important;
   width: 720px;
   margin: 0 auto;
-  background: #8a7849;
+  background: #2c3e50 !important;
   overflow-y: visible;
 }
-
-ul h1{
-    margin-top: auto;
-    margin-bottom: auto;
-    color: #e7d17b;
-}
-
-ul{
-    color: #e7d17b;
-}
-
 .folds {
   margin-bottom: 48px;
 }
 
+#addition{
+    width: 10%;
+    text-align: right;
+    color: #00ff9f;
+    text-shadow: 1px 1px 1px pink;
+}
 .parent {
   margin-top : 15%;
   position: relative;
   height: 180px;
   background: #fff;
 }
-
 .child {
   position: absolute;
   top: 0;
