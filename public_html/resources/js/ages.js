@@ -20,63 +20,33 @@
  * A l’aide de ternaires, vous pourrez ainsi accorder les phrases en fonction de l’utilisateur.
  */
 
-/*function giveSex() {
-    debugger;
-    var genre ="";
-    var error = null;
-    var bouRad = document.getElementsByName("genre");
-    for (var i = 0; i < bouRad.length; i++){
-        if (bouRad[i].checked) {
-            genre = bouRad[i].value;
-            break;
-        }
-    }
-    
-    switch (genre) {
-        case "M":
-            genre = " un homme ";
-        break;
-        case "F":
-            genre = " une femme ";
-        break;
-        default:
-            genre = " un homme ";       
-    }
-    alert(genre);
-return genre;
-}
-*/
- 
-function giveFeature(age) {;
+function giveFeature() {
     var rep = "";
-    var error;
+    var error = null;
     var genre;
     var age;
-    
+
     var bouRad = document.getElementsByName("genre");
-    for (var i = 0; i < bouRad.length; i++){
+    for (var i = 0; i < bouRad.length; i++) {
         if (bouRad[i].checked) {
             genre = bouRad[i].value;
             break;
         }
     }
-    
-    
     switch (genre) {
         case "M":
             genre = " un homme ";
-        break;
+            break;
         case "F":
             genre = " une femme ";
-        break;
+            break;
         default:
-            genre = " un homme ";       
+            genre = " un homme ";
     }
-    
-    age = document.getElementbyId(age)
-    
-    
-    if (age <= 1) {
+
+    age = document.getElementById("age").value;
+
+    if(age <= 1) {
         rep = "Tu es " + genre + " bébé balèze";
     } else if (age <= 6) {
         rep = "Tu es " + genre + " jeune enfant";
@@ -92,7 +62,7 @@ function giveFeature(age) {;
         error = "Erreur";
     }
 
-document.getElementById("resultat2").innerHTML = error === null ? rep : error;
+    document.getElementById("resultat2").innerHTML = error === null ? rep : error;
 }
 
 
